@@ -1,3 +1,6 @@
+//Author JHeroGHJP on GitHub.
+//If you wish to help this repository, please send a message.
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
