@@ -23,6 +23,7 @@ void selectionSort (int vetor[])
 {
     int indiceMenor = 0;
     int aux;
+    int trocas = 0;
     
     for (int i = 0; i < tamanho - 1; i++)
     {
@@ -41,10 +42,12 @@ void selectionSort (int vetor[])
             aux = vetor[i];
             vetor[i] = vetor[indiceMenor];
             vetor[indiceMenor] = aux;
+            
+            trocas++;
         }
     }
     
-    printf ("Vetor ordenado!\n");
+    printf ("Vetor ordenado! (%i trocas)\n", trocas);
 }
 
 void preencher (int vetor[])
