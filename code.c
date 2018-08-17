@@ -5,14 +5,10 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define tamanho 21
+#define tamanho 20
 
 void selectionSort (int vetor[])
 {
-    unsigned long long inicio, tempo;
-    
-    inicio = clock();
-    
     int indiceMenor = 0;
     int aux;
     
@@ -35,26 +31,14 @@ void selectionSort (int vetor[])
             vetor[indiceMenor] = aux;
         }
     }
-    
-    tempo = clock() - inicio;
-    
-    printf ("Vetor sortido. (%llu us)\n", tempo);
 }
 
 void preencher (int vetor[])
 {
-    unsigned long long inicio, tempo;
-    
-    inicio = clock();
-    
     for (int i = 0; i < tamanho; i++)
     {
         vetor[i] = rand()%tamanho;
     }
-    
-    tempo = clock() - inicio;
-    
-    printf ("Vetor preenchido. (%llu us)\n", tempo);
 }
 
 void mostrar (int vetor[])
