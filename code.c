@@ -5,7 +5,19 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define tamanho 20
+#define tamanho 10
+
+void mostrar (int vetor[])
+{
+    printf ("[");
+    
+    for (int i = 0; i < tamanho; i++)
+    {
+        printf (" %i ", vetor[i]);
+    }
+    
+    printf ("]\n");
+}
 
 void selectionSort (int vetor[])
 {
@@ -39,18 +51,6 @@ void preencher (int vetor[])
     {
         vetor[i] = rand()%tamanho;
     }
-}
-
-void mostrar (int vetor[])
-{
-    printf ("[");
-    
-    for (int i = 0; i < tamanho; i++)
-    {
-        printf (" %i ", vetor[i]);
-    }
-    
-    printf ("]\n");
 }
 
 void main()
