@@ -5,7 +5,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define tamanho 10
+#define tamanho 20
 
 void mostrar (int vetor[])
 {
@@ -43,6 +43,8 @@ void selectionSort (int vetor[])
             vetor[indiceMenor] = aux;
         }
     }
+    
+    printf ("Vetor ordenado!\n");
 }
 
 void preencher (int vetor[])
@@ -55,7 +57,7 @@ void preencher (int vetor[])
 
 void main()
 {
-    srand (7);
+    srand ((time (NULL)));
     
     int vetor[tamanho];
     
